@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #76453B;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+    padding: 0 15px;
+    padding-left: 70px;
+    background-color: white;
+    color: #76453B;
+    font-weight: bold;
+}
+nav ul{
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav ul li{
+    transition-duration: .5s;
+    list-style-type: none;
+    cursor: pointer;
+}
+nav ul li:hover{
+    transform: translateY(-10px);
+}
+main{
+    width: 40vw;
+    height: 50vh;
+    position: absolute;
+    bottom: 15%;
+    left: 80px;
+}
+main h2{
+    font-size: 2em;
+    font-style: bold;
+    color: white;
+}
+main h3{
+    font-size: 6em;
+    font-style: bold;
+    color: red;
+}
+main p{
+    color: white;
+}
+main a{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px 25px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 60px;
+    transition-duration: .5s;
+}
+main a:hover{
+    transform: translateY(-10px);
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    gap:  0px 20px;
+    position: absolute;
+    bottom: 0px;
+    padding-left: 70px;
+    padding-bottom: 15px;
+}
+footer a{
+    cursor: pointer;
+    border-radius: 100px;
+    padding: 5px;
+    transition-duration: .5s;
+    border: 0px solid red;
+    margin: 0px 5px; 
+}
+footer a:nth-child(1):hover{
+    border: 3px solid red;
+    transform: translateY(-10px);
+}
+footer a:nth-child(2):hover{
+    border: 3px solid red;
+    transform: translateY(-10px);
+}
+footer a:nth-child(3):hover{
+    border: 3px solid red;
+    transform: translateY(-10px);
+}
+aside{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+aside figure:nth-child(1){
+    position: absolute;
+    right: 300px;
+    bottom: -10px;
+}
+aside figure:nth-child(2){
+    transform: rotate(70deg);
+    position: absolute;
+    right: 320px;
+    bottom: 150px;
+}
+aside figure:nth-child(3){
+    transform: rotate(70deg);
+    position: absolute;
+    right: 100px;
+    bottom: -30px;
+}
+aside figure:nth-child(4){
+    transform: rotate(-70deg);
+    position: absolute;
+    bottom: 300px;
+    right: -20px;
+}
+aside figure img{
+    margin-left: -70px;
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    clip-path: circle(50% at bottom right);
+}
